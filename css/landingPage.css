@@ -1,0 +1,103 @@
+@import "variables.css";
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Fredoka+One');
+@import "laptop.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /* background: rgb(var(--primary-0)); */
+  padding: 0;
+  margin: 0;
+}
+
+.bg-image {
+  background-image: url("../images/background.jpg");
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+}
+
+.launching-soon {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: var(--h2font-size);
+  color: rgb(var(--pure-white));
+  margin: 0;
+  padding: 2vh 0;
+  position: absolute;
+  width: 100vw;
+  text-shadow: 1px 1px 5px rgb(var(--pure-black));
+}
+.launching-soon h1 {
+  margin: 0;
+  padding: calc(0.5 * var(--h2font-size)) 0;
+}
+
+.cover {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.coding-academic {
+  color: rgb(var(--pure-white));
+  font-family: 'Cinzel', serif;
+  font-size: var(--pfont-size);
+  position: absolute;
+  right: 0;
+  width: 55%;
+  padding: 5vh 5vw;
+  text-align: center;
+  text-shadow: 1px 1px 5px rgb(var(--pure-black));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.coding-academic h2 {
+  font-size: var(--h2font-size);
+}
+
+#mce-EMAIL {
+  font-size: var(--pfont-size);
+  border-radius: 2px;
+  border: none;
+  padding: calc(0.3 * var(--pfont-size)) calc(0.5 * var(--pfont-size));
+  width: 80%;
+}
+
+#mc-embedded-subscribe {
+  font-size: var(--pfont-size);
+  margin-top: var(--pfont-size);
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  background: rgb(var(--tertiary-0));
+  border: 2px solid rgb(var(--tertiary-4));
+  padding: calc(0.3 * var(--pfont-size)) calc(0.5 * var(--pfont-size));
+}
+
+
+
+
+@media(max-width: 768px) {
+  .launching-soon {
+    position: relative;
+    padding: 0;
+  }
+  .coding-academic {
+    position: relative;
+    top: calc(3.5* var(--h2font-size));
+    width: 100%;
+  }
+}

@@ -1,0 +1,96 @@
+/* Simply use these CSS variables 
+ * Usage of CSS variables is preferred because it will help in changing to night mode
+ * Also, we can change opacities here
+ * USAGE:
+ * color: rgb(var(--color_name));
+ * OR
+ * color: rgba(var(--color_name), opacity);
+ */
+:root {
+  --primary-0: 147,  0, 211;
+  --primary-1: 183, 25, 252;
+  --primary-2: 179,  4, 255;
+  --primary-3: 111,  0, 159;
+  --primary-4:  87,  0, 125;
+  
+  --secondary-0: 255, 116,  0;
+  --secondary-1: 255, 123, 14;
+  --secondary-2: 255, 116,  0;
+  --secondary-3: 239, 108,  0;
+  --secondary-4: 188,  85,  0;
+
+  --tertiary-0:  0, 160, 205;
+  --tertiary-1: 22, 201, 251;
+  --tertiary-2:  3, 199, 255;
+  --tertiary-3:  0, 116, 149;
+  --tertiary-4:  0,  91, 117;
+
+  --text-color1:  51,  51,  51;  /* #333333 */
+  --text-color2: 221, 221, 221;  /* #dddddd */
+  --pure-white:  255, 255, 255;  /* #ffffff */
+  --pure-black:    0,   0,   0;  /* #000000 */
+  --shadow-color: 51,  51,  51;  /* #333333 */
+
+  /* These are dynamic font sizes that will change according to the screen size */
+  --h1font-size: calc(36px + (48 - 36) * (100vw - 400px)/(1500 - 400));
+  --h2font-size: calc(28px + (40 - 28) * (100vw - 400px)/(1500 - 400));
+  --h3font-size: calc(24px + (32 - 24) * (100vw - 400px)/(1500 - 400));
+  --h4font-size: calc(20px + (28 - 20) * (100vw - 400px)/(1500 - 400));
+  --pfont-size: calc(16px + (20 - 16) * (100vw - 400px)/(1500 - 400));
+
+  /* We will change the side margin later */
+  --side-margin: 12%;
+}
+
+@media (max-width: 772px) {
+  :root {
+    --side-margin: 9%;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    --side-margin: 8%;
+  }
+}
+
+/* OR Use these classes */
+
+/* As rgba values */
+.rgba-primary-0 { color: rgba(147, 0,211,1) } /* Main Primary color */
+.rgba-primary-1 { color: rgba(183, 25,252,1) }
+.rgba-primary-2 { color: rgba(179, 4,255,1) }
+.rgba-primary-3 { color: rgba(111, 0,159,1) }
+.rgba-primary-4 { color: rgba( 87, 0,125,1) }
+
+.rgba-secondary-0 { color: rgba(255,116, 0,1) } /* Main Secondary color (1) */
+.rgba-secondary-1 { color: rgba(255,123, 14,1) }
+.rgba-secondary-2 { color: rgba(255,116, 0,1) }
+.rgba-secondary-3 { color: rgba(239,108, 0,1) }
+.rgba-secondary-4 { color: rgba(188, 85, 0,1) }
+
+.rgba-tertiary-0 { color: rgba( 0,160,205,1) } /* Main Secondary color (2) */
+.rgba-tertiary-1 { color: rgba( 22,201,251,1) }
+.rgba-tertiary-2 { color: rgba( 3,199,255,1) }
+.rgba-tertiary-3 { color: rgba( 0,116,149,1) }
+.rgba-tertiary-4 { color: rgba( 0, 91,117,1) }
+
+/* As hex codes */
+
+.color-primary-0 { color: #9300D3 } /* Main Primary color */
+.color-primary-1 { color: #B719FC }
+.color-primary-2 { color: #B304FF }
+.color-primary-3 { color: #6F009F }
+.color-primary-4 { color: #57007D }
+
+.color-secondary-0 { color: #FF7400 } /* Main Secondary color (1) */
+.color-secondary-1 { color: #FF7B0E }
+.color-secondary-2 { color: #FF7400 }
+.color-secondary-3 { color: #EF6C00 }
+.color-secondary-4 { color: #BC5500 }
+
+.color-tertiary-0 { color: #00A0CD } /* Main Secondary color (2) */
+.color-tertiary-1 { color: #16C9FB }
+.color-tertiary-2 { color: #03C7FF }
+.color-tertiary-3 { color: #007495 }
+.color-tertiary-4 { color: #005B75 }
