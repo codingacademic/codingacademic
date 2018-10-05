@@ -1,11 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-body {
-    font-family: 'Lato', sans-serif;
-    color: #FFF;
-    background: #322f30;
-    -webkit-font-smoothing: antialiased;
-}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -33,7 +28,7 @@ ul {
     list-style: none;
 }
 .footer-social-icons {
-    width: 350px;
+    width: 100%;
     display:block;
     margin: 0 auto;
 }
@@ -46,7 +41,7 @@ ul.social-icons {
 .social-icons li {
     vertical-align: top;
     display: inline;
-    height: 100px;
+    /* height: 100px; */
 }
 .social-icons a {
     color: #fff;
