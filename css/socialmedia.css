@@ -83,18 +83,6 @@ ul.social-icons {
 .fa-instagram:hover {
     background-color: #0073a4;
 }
-.fa-telegram {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-telegram:hover {
-    background-color: #0073a4;
-}
 .fa-linkedin {
     padding:10px 14px;
     -o-transition:.5s;
