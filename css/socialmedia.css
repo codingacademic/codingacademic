@@ -1,109 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-a {
-    text-decoration: none;
-    color: #fff;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
-p > a:hover{
-    color: #d9d9d9;
-    text-decoration:  underline;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin:  1% 0 1% 0;
-}
-._12 {
-    font-size: 1.2em;
-}
-._14 {
-    font-size: 1.4em;
-}
-ul {
-    padding:0;
-    list-style: none;
-}
-.footer-social-icons {
-    width: 100%;
-    display:block;
-    margin: 0 auto;
-}
-.social-icon {
-    color: #fff;
-}
-ul.social-icons {
-    margin-top: 10px;
-}
-.social-icons li {
-    vertical-align: top;
-    display: inline;
-    /* height: 100px; */
-}
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
+.fa:hover {
+    opacity: 0.7;
 }
 .fa-facebook {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-facebook:hover {
-    background-color: #00aced;
+  background: #3B5998;
+  color: white;
 }
 .fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-twitter:hover {
-    background-color: #00aced;
-}
-.fa-instagram {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-instagram:hover {
-    background-color: #0073a4;
+  background: #55ACEE;
+  color: white;
 }
 .fa-telegram {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-telegram:hover {
-    background-color: #0073a4;
+  background: #427af4;
+  color: white;
 }
 .fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+  background: #007bb5;
+  color: white;
 }
-.fa-linkedin:hover {
-    background-color: #0073a4;
+.fa-instagram {
+  background: #e80b67;
+  color: white;
 }
